@@ -1,0 +1,69 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#title {
+    font-size: 50px;
+    text-align: center;
+}
+
+#description {
+    font-weight: 400;
+    text-align: center;
+}
+
+#treeContainer {
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+
+#notSvgDiv {
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+
+.node {
+    box-sizing: border-box;
+    position: absolute;
+    overflow: hidden;    
+    outline: solid 1px white;
+    font: 10px sans-serif;
+    color: #eee;
+    padding: 2px;
+}
+
+#legendContainer {
+    display: flex;
+    justify-content: center;
+}
+
+#legend {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.label {
+    display: flex;
+    margin: 5px 30px;
+}
+
+.square {
+    height: 16px;
+    width: 16px;
+    margin-right: 8px;
+}
+
+#tooltip {
+    position: absolute;
+    padding: 10px;
+    background-color: rgb(255, 255, 204);
+    box-shadow: 1px 1px 5px rgb(128, 128, 128);
+    font-size: 14px;
+}
